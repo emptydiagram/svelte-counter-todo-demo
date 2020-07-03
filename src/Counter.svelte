@@ -1,13 +1,11 @@
 <script>
-  import { link } from 'svelte-spa-router';
-  import { count } from './stores.js';
+  import { counterStore } from './stores.js';
 </script>
 
 <main>
-  <h2>{$count}</h2>
-  <a href="/" use:link>&lt; go back</a>
+  <h2>{$counterStore}</h2>
 
-  <button on:click={count.inc}>+</button>
-  <button on:click={count.dec}>-</button>
-  <button on:click={count.reset}>reset</button>
+  <button on:click={counterStore.inc}>+</button>
+  <button on:click={counterStore.dec}>-</button>
+  <button on:click={counterStore.reset}>reset</button>
 </main>

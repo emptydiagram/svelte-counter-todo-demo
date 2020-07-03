@@ -1,18 +1,14 @@
 <script>
-  import { link } from "svelte-spa-router";
 </script>
 
 <style>
-  h1 {
+  p {
     color: green;
   }
 </style>
 
 <main>
-  <h1>Hail and well met</h1>
-  <ul>
-    <li>
-      <a href="/counter" use:link>counter</a>
-    </li>
-  </ul>
+  <p>it uses svelte-spa-router to route between different demo apps (App.svelte)</p>
+  <p>the state is kept in custom stores (stores.js)</p>
+  <p>TodoList uses a "controlled component" for its input element</p>
 </main>
